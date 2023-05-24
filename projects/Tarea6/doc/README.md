@@ -4,7 +4,11 @@ Flores Varela Miguel Ángel
 
 ### Introducción
 
-Pyhon nos permite realizar múltiples cosas, tales como generar valores aleatorio, crear loops y ciclos, crear condiciones complejas, etc. Debido a su interactividad este lenguage suele ser muy utilizado en el desarrollo de juegos, por lo que en esta ocasión el objetivo es realizar un juego iteractivo aplicando lo visto en clase respecto a conidiconales y ciclos.
+"Piedra, papel o tijera(s), conocido también como chin guas pul, pikachú, cachipún, jankenpón, yan ken po, pin pon papas, hakembó y how-are-you-speak. En México, es conocido como «piedra, papel o tijera», «chin chan pu» o «pikachú» (una variante del mismo). Es un juego de manos en el que existen tres elementos: la piedra, que vence a la tijera rompiéndola, la tijera, que vence al papel cortándolo, y el papel, que vence a la piedra envolviéndola. Se utiliza con mucha frecuencia para decidir quién de dos personas hará algo, tal y como se hace a veces usando una moneda, o para dirimir algún asunto" (ver https://es.wikipedia.org/wiki/Piedra,_papel_o_tijera). 
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Rock-paper-scissors_%28paper%29.png/140px-Rock-paper-scissors_%28paper%29.png)
+
+Este programa simula el juego de piedra, papel o tijera, donde el usuario jugará contra la computadora.
 
 
 ### Metodología
