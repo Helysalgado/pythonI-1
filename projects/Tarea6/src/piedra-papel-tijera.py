@@ -36,9 +36,9 @@ import random
 # Declarar os elementos constantes en el código.
 
 opciones=['tijera','piedra','papel']
-op1 = "tijera"
-op2 = "piedra"
-op3 = "papel"
+tijera = "tijera"
+piedra = "piedra"
+papel = "papel"
 
 
 # Comenzar el programa
@@ -48,11 +48,11 @@ print("\n\nBienvenido al juego de piedra, papel o tijera.")
 # Repetir el programa las veces que el usuario desee.
 iniciador = "s"
 while iniciador == "s":
-        nombre=input("\nDame tu nombre: ")
-        opcion_entrada=input("\n" + nombre + ", a la de 3, teclea tu opción (piedra, papel o tijera): ")
+        nombre = input("\nDame tu nombre: ")
+        opcion_entrada = input("\n" + nombre + ", a la de 3, teclea tu opción (piedra, papel o tijera): ")
         
         # Convertir a minúsculas para procesar mejor
-        opcion_usuario=opcion_entrada.lower()
+        opcion_usuario = opcion_entrada.lower()
         
         # Obtener valores aleatorios para la elección de la computadora
         opcion_a_elegir=random.randint(0, 2)
@@ -64,20 +64,20 @@ while iniciador == "s":
         # Definir el resultado en cada caso posible.
         if opcion_usuario == opcion_compu:
                 print("¡Empate!\n\n")
-        elif opcion_usuario == op1:
-                if opcion_compu == op3:
+        elif opcion_usuario == tijera:
+                if opcion_compu == papel:
                         print("¡Felicidades! Ganaste\n\n")
-                elif opcion_compu == op2:
+                elif opcion_compu == piedra:
                         print("Lo siento, perdiste\n\n")
-        elif opcion_usuario == op2:
-                if opcion_compu == op1:
+        elif opcion_usuario == piedra:
+                if opcion_compu == tijera:
                         print("¡Felicidades! Ganaste\n\n")
-                elif opcion_compu == op3:
+                elif opcion_compu == papel:
                         print("Lo siento, perdiste\n\n")
-        elif opcion_usuario == op3:
-                if opcion_compu == op2:
+        elif opcion_usuario == papel:
+                if opcion_compu == piedra:
                         print("¡Felicidades! Ganaste\n\n")
-                elif opcion_compu == op1:
+                elif opcion_compu == tijera:
                         print("Lo siento, perdiste\n\n")
         print("\nIntroduce el número de la opción que desees\n\n")
         
@@ -85,6 +85,8 @@ while iniciador == "s":
         iniciador = input("¿Quieres volver a jugar?\n\nSí(s)\n\nNo(n)\n\n")
         
         # Volver a preguntar al usuario en dado caso de que ingrese una opción no especificada.
-        while iniciador!="s" and iniciador!="n":
+        while iniciador != "s" and iniciador != "n":
                 print("\n\nIntroduce una opción válida\n\n")
                 iniciador=input("¿Quieres volver a jugar?\n\nSí(s)\n\nNo(n)\n\n")
+                    
+                    
